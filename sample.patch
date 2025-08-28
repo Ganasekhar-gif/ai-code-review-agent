@@ -1,0 +1,10 @@
+diff --git a/sample.py b/sample.py
+index 9ba9c8c..c35701c 100644
+--- a/sample.py
++++ b/sample.py
+@@ -1 +1,4 @@
+-print("hello")
++def add(a: int, b: int) -> int:
++  return a-b
++
++print('hi sekhar')

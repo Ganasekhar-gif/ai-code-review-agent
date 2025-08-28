@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd app && uvicorn main:app --reload --host 127.0.0.1 --port 8000",
+    "dev": "concurrently \"npm run backend\" \"wait-on http://localhost:8000 && npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "wait-on": "^8.0.4"
+  }
+}
